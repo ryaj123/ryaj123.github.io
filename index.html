@@ -4,76 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] | Portfolio</title>
+
+    <title>Ryan Jones | Portfolio</title>
+
+    <style>
+        /* Overall page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Top section */
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* LinkedIn button */
+        .linkedin {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .linkedin:hover {
+            opacity: 0.8;
+        }
+
+        /* Main sections */
+        section {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #1f2937;
+            padding-bottom: 8px;
+        }
+
+        /* Skills */
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        h3 {
+            margin-bottom: 5px;
+            color: #1f2937;
+        }
+
+        section a {
+            color: #0077b5;
+            font-weight: bold;
+        }
+
+        section a:hover {
+            color: #004f7a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #1f2937;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Ryan Jones</h1>
-        <p>[Accounting Student | Aspiring Accountant | Experienced Programmer]</p>
+        <p>Accounting Student | Aspiring Accountant | Experienced Programmer</p>
     </header>
-    <a href="https://www.linkedin.com/in/ryan-jones-605956278" target="_blank">
-    LinkedIn
-</a>
 
-    <hr>
+    <a class="linkedin"
+       href="https://www.linkedin.com/in/ryan-jones-605956278"
+       target="_blank">
+        View My LinkedIn
+    </a>
+
 
     <!-- PERSONAL STATEMENT -->
     <section>
         <h2>Personal Statement</h2>
 
         <p>
-            I am a former Computer Science major, current Accounting major
-            who is passionate about corporate ethics in auditing as well as the integration of technology in accounting.
-
+            I am a former Computer Science major and current Accounting major
+            who is passionate about corporate ethics in auditing as well as
+            the integration of technology in accounting.
         </p>
     </section>
 
-    <hr>
 
     <!-- SKILLS -->
     <section>
         <h2>Skills</h2>
 
         <ul>
-            <li>Experience in programming languages such as Python, Java, Assembly, and C</li>
-            <li>Profficiency with Microsoft Excel, DataSnipper, and other software used in auditing and accounting </li>
-            <li>Management and leadership skills in academics and extracurricular clubs</li>
-            <li>Years of experience in restaurant and supply chain service industries</li>
-            
+            <li>
+                Experience in programming languages such as Python, Java,
+                Assembly, and C
+            </li>
+
+            <li>
+                Proficiency with Microsoft Excel, DataSnipper, and other
+                software used in auditing and accounting
+            </li>
+
+            <li>
+                Management and leadership skills in academics and
+                extracurricular clubs
+            </li>
+
+            <li>
+                Years of experience in restaurant and supply chain
+                service industries
+            </li>
         </ul>
     </section>
 
-    <hr>
 
     <!-- PROJECTS -->
     <section>
         <h2>Projects</h2>
 
-        <h3>Co-writer for MyMalloc project</h3>
+        <h3>MyMalloc</h3>
+
         <p>
-            Project that uses malloc function in C to get 120 1-byte objects, 
-            storing the pointers in an array, then using free function to deallocate the chunks
+            Co-writer of a project that uses the malloc function in C to
+            allocate 120 one-byte objects, store their pointers in an array,
+            and use the free function to deallocate the memory.
         </p>
-       </p>
-        <p><em>Private repository — code available upon request.</em></p>
+
+        <p>
+            <em>Private repository — code available upon request.</em>
+        </p>
 
 
         <h3>ForestFire</h3>
+
         <p>
-            Reads and writes files in java containing a 2D array of Forest Patch objects that can set nearby ones on fire
+            Java project that reads and writes files containing a
+            two-dimensional array of Forest Patch objects and simulates
+            fire spreading between neighboring patches.
         </p>
-        <a href="https://github.com/ryaj123/forest">View Project</a>
 
+        <a href="https://github.com/ryaj123/forest"
+           target="_blank">
+            View Project on GitHub
+        </a>
 
-        
     </section>
 
-    <hr>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 [Your Name]</p>
+        <p>&copy; 2026 Ryan Jones</p>
     </footer>
 
 </body>
